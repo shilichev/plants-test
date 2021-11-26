@@ -112,8 +112,8 @@ main,
 .content__first-screen {
   z-index: 1;
   background: rgba(200, 243, 222, 0.5);
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter:blur(12px);
+  backdrop-filter: blur(12px);
   border-radius: 32px;
   width: calc(50vw - 20px);
   width: calc(var(--vw, 1vw) * 50 - 20px);
