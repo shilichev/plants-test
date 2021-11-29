@@ -80,16 +80,16 @@ main,
   position: absolute;
   height: auto;
   object-fit: cover;
-  width: 52vh;
-  width: calc(var(--vh, 1vh) * 52);
+  width: 54vh;
+  width: calc(var(--vh, 1vh) * 54);
 }
 
 .image__first-screen {
   position: absolute;
   height: 50%;
   top: 28%;
-  right: 52vh;
-  right: calc(var(--vh, 1vh) * 52);
+  right: 54vh;
+  right: calc(var(--vh, 1vh) * 54);
 }
 
 .button__first-screen {
@@ -117,12 +117,6 @@ main,
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
   border-radius: 32px;
-  /* width: calc(47vw - 20px);
-  width: calc(var(--vw, 1vw) * 47 - 20px);
-  height: calc(47vw - 20px);
-  height: calc(var(--vw, 1vw) * 47 - 20px);
-  margin-right: calc(47vw - 35px);
-  margin-right: calc(var(--vw, 1vw) * 47 - 35px); */
   width: 16.8rem;
   height: 16.8rem;
   margin-right: calc(var(--vw, 1vw) * 47 - 35px);
