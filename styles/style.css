@@ -81,16 +81,16 @@ main,
   position: absolute;
   height: auto;
   object-fit: cover;
-  width: 50;
-  width: calc(var(--vh, 1vh) * 50);
+  width: 52vh;
+  width: calc(var(--vh, 1vh) * 52);
 }
 
 .image__first-screen {
   position: absolute;
   height: 50%;
   top: 28%;
-  right: 50;
-  right: calc(var(--vh, 1vh) * 50);
+  right: 52vh;
+  right: calc(var(--vh, 1vh) * 52);
 }
 
 .button__first-screen {
@@ -109,8 +109,8 @@ main,
   text-align: center;
   letter-spacing: 0.0145455em;
   color: #ffffff;
-  margin-bottom: clamp(10px, calc(40vh - 200px), 50px);
-  margin-bottom: clamp(10px, calc(var(--vh, 1vh) * 40 - 200px), 50px);
+  margin-bottom: 10px;
+  /* margin-bottom: clamp(10px, calc(var(--vh, 1vh) * 40 - 200px), 50px); */
 }
 
 .content__first-screen {
