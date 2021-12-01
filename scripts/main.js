@@ -48,7 +48,7 @@ var FIRST_SCREEN = `<div class="container__first-screen">
 <div class="image__first-screen">
   <img src="images/plant__first-screen.png" alt="" />
 </div>
-<div class="button__first-screen" id="button__second-screen">Install</div>
+<div class="button__first-screen" id="button__first-screen">Install</div>
 </div>
 `;
 
@@ -151,12 +151,58 @@ function checkScreen() {
   }
 }
 
-function addEvents () {
+function getPlatform() {
+  var platform = ["Android", "iOS", "Win32"];
 
+  for (var i = 0; i < platform.length; i++) {
+    if (navigator.platform.indexOf(platform[i]) > -1) {
+      return platform[i];
+    }
+  }
+}
+
+function onClickEvent(screen) {
+  switch (screen) {
+    case "first":
+      console.log(getPlatform());
+      console.log(screen);
+
+      break;
+    case "second":
+      console.log(screen);
+      break;
+    case "third":
+      console.log(screen);
+      break;
+  }
+  if (getPlatform() === "Android") {
+    window.location.href = "http://play.google.com/store/";
+  } else if (getPlatform() === "iOS") {
+    window.location.href = "https://apps.apple.com/";
+  }
+}
+
+function addEvents() {
+  document
+    .getElementById("button__first-screen")
+    .addEventListener("click", function () {
+      onClickEvent("first");
+    });
+  document
+    .getElementById("button__second-screen")
+    .addEventListener("click", function () {
+      onClickEvent("second");
+    });
+  document
+    .getElementById("button__third-screen")
+    .addEventListener("click", function () {
+      onClickEvent("third");
+    });
 }
 
 function documentReady() {
   checkScreen();
+  addEvents();
 }
 
-documentReady()
+documentReady();
