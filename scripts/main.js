@@ -186,9 +186,9 @@ function onClickEvent(screen) {
   console.log("userAgent: " + detect.userAgent());
 
   if (detect.os() === "AndroidOS") {
-    window.location.href = "http://play.google.com/store/";
+    window.location.href = "https://play.google.com/store/apps/details?id=com.straitonapps.plantcare&hl=en&gl=US";
   } else if (detect.os() === "iOS") {
-    window.location.href = "https://apps.apple.com/";
+    window.location.href = "https://apps.apple.com/by/app/plantme-plant-identification/id1532875668";
   }
 }
 
