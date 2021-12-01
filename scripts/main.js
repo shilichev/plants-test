@@ -1,4 +1,4 @@
-var screen = "SECOND_SCREEN";
+var screen = "FIRST_SCREEN";
 
 var FIRST_SCREEN = `<div class="container__first-screen">
     <div>
@@ -48,7 +48,7 @@ var FIRST_SCREEN = `<div class="container__first-screen">
 <div class="image__first-screen">
   <img src="images/plant__first-screen.png" alt="" />
 </div>
-<div class="button__first-screen">Install</div>
+<div class="button__first-screen" id="button__second-screen">Install</div>
 </div>
 `;
 
@@ -100,10 +100,38 @@ var SECOND_SCREEN = `<div class="container__second-screen">
 <div class="title__second-screen">
   Find out more about caring for your plant
 </div>
-<div class="button__second-screen">Start caring</div>
+<div class="button__second-screen" id="button__second-screen">Start caring</div>
 </div>`;
 
-var THIRD_SCREEN = "";
+var THIRD_SCREEN = `<div class="container__third-screen">
+<div class="before-after-container__third-screen">
+  <div class="before__third-screen">Before</div>
+  <div class="after__third-screen">After</div>
+</div>
+
+<div class="image-container__third-screen">
+  <img
+    src="images/plant__third-screen.png"
+    alt=""
+    class="plant__third-screen"
+  />
+</div>
+<div class="title-container__third-screen">
+  <div>
+    <div class="title__app-name">
+      <div>
+        <img src="images/icon.png" alt="" />
+        <p>PlantMe</p>
+      </div>
+    </div>
+  </div>
+  <div class="title__third-screen">
+    saved more than a million plants
+  </div>
+</div>
+
+<div class="button__third-screen" id="button__third-screen">Install</div>
+</div>`;
 
 function render(frame) {
   console.log(document.getElementById("main"));
@@ -122,4 +150,13 @@ function checkScreen() {
       break;
   }
 }
-checkScreen();
+
+function addEvents () {
+
+}
+
+function documentReady() {
+  checkScreen();
+}
+
+documentReady()
