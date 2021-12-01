@@ -17,7 +17,7 @@
 }
 
 .plant__second-screen {
-  width: 55%;
+  width: 25vh;
 }
 .list__second-screen {
   width: calc(50% - 32px);
@@ -26,8 +26,7 @@
   justify-content: space-around;
   height: 80%;
 }
-.item__second-screen {
-}
+
 .item-description__second-screen {
   font-family: Montserrat;
   font-style: normal;
@@ -56,6 +55,7 @@
   letter-spacing: 0.0145455em;
   font-family: "Montserrat", sans-serif;
   margin-top: 10px;
+  width: calc(100% - 36px);
 }
 
 .button__second-screen {
