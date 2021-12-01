@@ -1,5 +1,7 @@
 var screen = "FIRST_SCREEN";
 
+let detect = new MobileDetect(window.navigator.userAgent);
+
 var FIRST_SCREEN = `<div class="container__first-screen">
     <div>
       <div class="title__app-name">
@@ -137,6 +139,7 @@ function render(frame) {
   console.log(document.getElementById("main"));
   document.getElementById("main").innerHTML = frame;
 }
+
 function checkScreen() {
   switch (screen) {
     case "FIRST_SCREEN":
@@ -176,11 +179,15 @@ function onClickEvent(screen) {
       break;
   }
 
-  window.location.href = "http://play.google.com/store/";
+  console.log("Mobile: " + detect.mobile()); // телефон или планшет
+  console.log("Phone: " + detect.phone()); // телефон
+  console.log("Tablet: " + detect.tablet()); // планшет
+  console.log("OS: " + detect.os()); // операционная система
+  console.log("userAgent: " + detect.userAgent());
 
-  if (getPlatform() === "Android") {
+  if (detect.os() === "Android") {
     window.location.href = "http://play.google.com/store/";
-  } else if (getPlatform() === "iOS") {
+  } else if (detect.os() === "iOS") {
     window.location.href = "https://apps.apple.com/";
   }
 }
