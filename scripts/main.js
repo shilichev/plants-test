@@ -185,7 +185,7 @@ function onClickEvent(screen) {
   console.log("OS: " + detect.os()); // операционная система
   console.log("userAgent: " + detect.userAgent());
 
-  if (detect.os() === "Android") {
+  if (detect.os() === "AndroidOS") {
     window.location.href = "http://play.google.com/store/";
   } else if (detect.os() === "iOS") {
     window.location.href = "https://apps.apple.com/";
