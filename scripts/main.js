@@ -175,6 +175,9 @@ function onClickEvent(screen) {
       console.log(screen);
       break;
   }
+
+  window.location.href = "http://play.google.com/store/";
+
   if (getPlatform() === "Android") {
     window.location.href = "http://play.google.com/store/";
   } else if (getPlatform() === "iOS") {
