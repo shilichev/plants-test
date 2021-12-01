@@ -1,4 +1,4 @@
-var screen = "FIRST_SCREEN";
+var screen = "SECOND_SCREEN";
 
 var FIRST_SCREEN = `<div class="container__first-screen">
     <div>
@@ -52,7 +52,56 @@ var FIRST_SCREEN = `<div class="container__first-screen">
 </div>
 `;
 
-var SECOND_SCREEN = "";
+var SECOND_SCREEN = `<div class="container__second-screen">
+<div>
+  <div class="title__app-name">
+    <div>
+      <img src="images/icon.png" alt="" />
+      <p>PlantMe</p>
+    </div>
+  </div>
+</div>
+<div class="content__second-screen">
+  <img
+    src="images/plant__second-screen.png"
+    alt=""
+    class="plant__second-screen"
+  />
+  <div class="list__second-screen">
+    <div class="item__second-screen">
+      <img
+        src="images/icon-plant__second-screen.png"
+        alt=""
+        class="item-image__second-screen"
+      />
+      <div class="item-description__second-screen">Drainage holes</div>
+    </div>
+    <div class="item__second-screen">
+      <img
+        src="images/thermometer__second-screen.png"
+        alt=""
+        class="item-image__second-screen"
+      />
+      <div class="item-description__second-screen">60-75 °F</div>
+    </div>
+    <div class="item__second-screen">
+      <img
+        src="images/sun__second-screen.png"
+        alt=""
+        class="item-image__second-screen"
+      />
+      <div class="item-description__second-screen">
+        Partial Sun <br />
+        exposure
+      </div>
+    </div>
+  </div>
+</div>
+<div class="title__second-screen">
+  Find out more about caring for your plant
+</div>
+<div class="button__second-screen">Start caring</div>
+</div>`;
 
 var THIRD_SCREEN = "";
 
