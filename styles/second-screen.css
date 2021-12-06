@@ -1,10 +1,15 @@
 .container__second-screen {
+  padding-top: 5%;
   height: 100%;
   background: linear-gradient(180deg, #fefffb 0%, #fbffee 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+}
+@media screen and (max-width: 350px) {
+  .container__second-screen {
+    padding-top: 0;
+  }
 }
 
 .content__second-screen {

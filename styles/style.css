@@ -1,8 +1,9 @@
 html {
-  /* position: fixed; */
+  position: fixed;
   font-size: 10px;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -19,5 +20,3 @@ p {
     font-size: 8px;
   }
 }
-
-
